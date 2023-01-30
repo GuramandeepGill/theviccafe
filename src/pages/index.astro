@@ -1,6 +1,7 @@
 ---
 import '@fontsource/birthstone';
-import '@fontsource/inter';
+import '@fontsource/inter/400.css';
+import '@fontsource/inter/700.css';
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 ---
@@ -8,14 +9,43 @@ import Footer from "../components/Footer.astro";
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>The Vic Cafe</title>
 	</head>
 	<body class="font-inter">
 		<Header />
-		<h1>The Vic Cafe</h1>
+		<main>
+			<section>
+				<h1>The Vic Cafe</h1>
+				<p>Located inside <strong>The Vic</strong> hotel, <strong>The Vic Cafe</strong> proudly serves delicious coffee and sandwiches to the Greater Victoria community.</p>
+				<div>
+					<a href="#">Order Online</a>
+				</div>
+			</section>
+
+			<section>
+				<img src="images/dry-display-case-and-interior-panoramic.jpg" alt="dry display case and interior panoramic">
+				<div>
+					<img src="images/coffee-beans.svg" alt="coffee beans">
+					<h2>About Us</h2>
+					<p>At The Vic Cafe (located inside The Vic hotel ― entrance from both hotel lobby and exterior), our passion is to serve the Greater Victoria community with delicious coffee and sandwiches. With an unparalleled focus on quality, we make fresh sandwiches for every order using the best ingredients.</p>
+					<p>We are open for dine-in and take-out. Also available on SkipTheDishes.</p>
+					<h3>Why Us?</h3>
+					<ul>
+						<li>
+							<img src="/images/fork-and-knife.svg" alt="fork and knife">
+							<p>Extensive Menu</p>
+						</li>
+						<li>
+							<img src="images/leaves.svg" alt="leaves">
+							<p>Organic Coffee</p>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</main>
 		<Footer />
 	</body>
 </html>
