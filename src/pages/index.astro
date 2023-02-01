@@ -2,6 +2,7 @@
 import '@fontsource/birthstone';
 import '@fontsource/inter/400.css';
 import '@fontsource/inter/700.css';
+import '../styles/base.css';
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 
@@ -108,7 +109,7 @@ const icedBeverages = [
 		<title>The Vic Cafe</title>
 	</head>
 	<body class="font-inter leading-6">
-		<Header />
+		<Header styles={'absolute top-5'} />
 		<main>
 			<section>
 				<!-- TO DO - background image -->
@@ -278,7 +279,7 @@ const icedBeverages = [
 				<section>
 					<h3>Contact</h3>
 					<section>
-						<!-- TO DO - phone icon <img src="" alt=""> -->
+						<img src="images/phone.svg" alt="phone">
 						<h4>Phone</h4>
 						<p>250.590.2345</p>
 					</section>
@@ -286,7 +287,7 @@ const icedBeverages = [
 				<section>
 					<h3>Location</h3>
 					<section>
-						<!-- TO DO - map icon <img src="" alt=""> -->
+						<img src="images/location.svg" alt="location">
 						<h4>Address</h4>
 						<p>123 George Rd E<br>Victoria, BC V9A 1L1</p>
 					</section>
@@ -312,5 +313,8 @@ const icedBeverages = [
 			</div>
 		</main>
 		<Footer />
+		<script>
+			import '../scripts/menu.js';	
+		</script>
 	</body>
 </html>

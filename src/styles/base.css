@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+   .set-width {
+     @apply max-w-[1440px] mx-auto;
+   }
+
+   .btn-white {
+      @apply inline-block px-6 py-2 text-matte-black bg-white rounded-full focus:text-white focus:bg-matte-black hover:text-white hover:bg-matte-black;
+   }
+}
+
+#hamburger.expanded svg:first-child {
+   visibility: hidden;
+}
+
+#hamburger.expanded svg:last-child {
+   visibility: visible;
+}
+
+#nav-links.expanded {
+   visibility: visible;
+}

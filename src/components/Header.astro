@@ -1,19 +1,31 @@
 ---
 ---
 
-<header>
+<header class="set-width flex items-center justify-between gap-5 pt-5 px-5">
 	<img class="w-40 md:w-44 lg:w-48" src="images/the-vic-cafe-logo.png" alt="The Vic Cafe">
-	<nav>
-		<ul>
-			<li>
-					<a href="#about-us">About Us</a>
-			</li>
-			<li>
-					<a href="#our-menu">Our Menu</a>
-			</li>
-			<li>
-					<a href="#contact-us">Contact Us</a>
-			</li>
-		</ul>
-	</nav>
+	<div>
+		<button id="hamburger" class="p-3 bg-matte-yellow rounded-full md:hidden">
+			<svg class="absolute w-5 fill-matte-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+				<title>Menu</title>
+				<path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="48" d="M88 152h336M88 256h336M88 360h336"/>
+			</svg>
+			<svg class="invisible w-5 fill-matte-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+				<title>Close</title>
+				<path d="M289.94 256l95-95A24 24 0 00351 127l-95 95-95-95a24 24 0 00-34 34l95 95-95 95a24 24 0 1034 34l95-95 95 95a24 24 0 0034-34z"/>
+			</svg>
+		</button>
+		<nav id="nav-links" class="invisible absolute left-5 right-5 mt-8 md:visible md:relative md:left-0 md:right-0 md:mt-0">
+			<ul class="[&>li>a]:w-full flex flex-col gap-3 p-3 text-center bg-matte-yellow rounded-[28px] md:flex-row md:rounded-full">
+				<li>
+						<a class="btn-white" href="#about-us">About Us</a>
+				</li>
+				<li>
+						<a class="btn-white" href="#our-menu">Our Menu</a>
+				</li>
+				<li>
+						<a class="btn-white" href="#contact-us">Contact Us</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
 </header>
