@@ -7,8 +7,16 @@
      @apply max-w-[1440px] mx-auto;
    }
 
+   .btn {
+      @apply inline-block px-6 py-2 border rounded-full;
+   }
+
    .btn-white {
-      @apply inline-block px-6 py-2 text-matte-black bg-white rounded-full focus:text-white focus:bg-matte-black hover:text-white hover:bg-matte-black;
+      @apply text-matte-black bg-white border-white focus:text-white focus:bg-matte-black focus:border-matte-black hover:text-white hover:bg-matte-black hover:border-matte-black;
+   }
+
+   .btn-yellow {
+      @apply text-matte-black bg-matte-yellow border border-matte-yellow focus:text-white focus:bg-transparent focus:border-white hover:text-white hover:bg-transparent hover:border-white;
    }
 }
 

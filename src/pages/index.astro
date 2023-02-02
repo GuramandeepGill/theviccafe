@@ -109,14 +109,17 @@ const icedBeverages = [
 		<title>The Vic Cafe</title>
 	</head>
 	<body class="font-inter leading-6">
-		<Header styles={'absolute top-5'} />
+		<Header/>
 		<main>
-			<section>
-				<!-- TO DO - background image -->
-				<h1>The Vic Cafe</h1>
-				<p>Located inside <strong>The Vic</strong> hotel, <strong>The Vic Cafe</strong> proudly serves delicious coffee and sandwiches to the Greater Victoria community.</p>
-				<div>
-					<a href="#">Order Online</a>
+			<section class="bg-[url(images/cafe-interior.jpg)] bg-right bg-no-repeat bg-cover">
+				<div class="pt-[264px] pb-44 bg-gradient-to-r from-black/75 to-transparent md:pt-[294px] md:pb-[200px] lg:pt-[324px] lg:pb-56">
+					<div class="set-width grid gap-5 px-5 md:gap-6 lg:gap-7">
+						<h1 class="font-birthstone text-7xl text-white md:text-8xl lg:text-[120px]">The Vic Cafe</h1>
+						<p class="w-[296px] text-gray-light text-justify md:w-[416px] lg:w-[520px]">Located inside <strong>The Vic</strong> hotel, <strong>The Vic Cafe</strong> proudly serves delicious coffee and sandwiches to the Greater Victoria community.</p>
+						<div>
+							<a class="btn btn-yellow" href="#">Order Online</a>
+						</div>
+					</div>
 				</div>
 			</section>
 
