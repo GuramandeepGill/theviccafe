@@ -20,14 +20,16 @@
    }
 }
 
+h1, h2, h3, h4 {
+   font-family: Birthstone, cursive;
+   line-height: 1;
+}
+
 #hamburger.expanded svg:first-child {
    visibility: hidden;
 }
 
-#hamburger.expanded svg:last-child {
-   visibility: visible;
-}
-
+#hamburger.expanded svg:last-child,
 #nav-links.expanded {
    visibility: visible;
 }
