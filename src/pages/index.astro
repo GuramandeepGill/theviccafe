@@ -195,10 +195,10 @@ const icedBeverages = [
 						</section>
 					</div>
 
-					<div>
-						<section>
-							<h3>All-Day Sandwiches (all day)</h3>
-							<ul>
+					<div class="grid gap-12 pt-24 md:grid-cols-2 md:gap-16 md:pt-[120px] lg:gap-20 lg:pt-36">
+						<section class="order-2">
+							<h3 class="text-[40px] text-white md:text-[44px] lg:text-5xl">All-Day Sandwiches (all day)</h3>
+							<ul class="[&_li]:grid [&_li]:grid-cols-[4fr_1fr] [&_li]:py-5 [&_li:not(:last-child)]:border-b [&_li]:border-dotted [&_li]:border-brown [&_span:last-child]:text-right">
 								{allDaySandwiches.map(({name, price}) =>
 									<li>
 										<span>{name}</span>
@@ -208,7 +208,7 @@ const icedBeverages = [
 							</ul>
 							<p>Breakfast & All-day Sandwiches have a choice of white bread, multigrain bread & bagels - plain, everything, sesame seed, multigrain.</p>
 						</section>
-						<div>
+						<div class="md:order-2">
 							<!-- TO DO - images -->
 						</div>
 					</div>
