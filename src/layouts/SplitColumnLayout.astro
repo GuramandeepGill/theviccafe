@@ -2,6 +2,6 @@
 const {reverseOnMobile} = Astro.props;
 ---
 
-<div class:list={['flex gap-12 md:grid md:grid-cols-2 md:gap-16 lg:gap-20', {'flex-col': !reverseOnMobile, 'flex-col-reverse': reverseOnMobile}]}>
+<div class:list={['flex', {'flex-col': !reverseOnMobile, 'flex-col-reverse': reverseOnMobile}, 'gap-12 md:grid md:grid-cols-2 md:gap-16 lg:gap-20']}>
    <slot />
 </div>

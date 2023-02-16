@@ -7,6 +7,14 @@
      @apply max-w-[1440px] mx-auto;
    }
 
+   .heading__three {
+      @apply text-[40px] md:text-[44px] lg:text-5xl;
+   }
+
+   .pricelist__item {
+      @apply grid grid-cols-[4fr_1fr] py-5 border-b border-dotted border-brown first:pt-0 last:pb-0 last:border-none;
+   }
+
    .btn {
       @apply inline-block px-6 py-2 border rounded-full;
    }

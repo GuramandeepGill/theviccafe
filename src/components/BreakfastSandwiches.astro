@@ -1,0 +1,22 @@
+---
+import SplitColumnLayout from "../layouts/SplitColumnLayout.astro";
+import PriceList from "./PriceList.astro";
+
+const breakfastSandwiches = [
+	{name: 'Scrambled Egg & Bacon Breakfast Burrito', price: 8.95},
+	{name: 'Scrambled Egg Bagel', price: 7.95},
+	{name: 'Hearty Beef & Egg Bagel', price: 8.95},
+	{name: 'Creamy Egg Onion Sandwich', price: 7.95},
+	{name: 'Eggvocado Bean Burrito', price: 7.95},
+	{name: 'Yogurt & Berries', price: 6.95},
+	{name: 'Breakfast Beef Pocket', price: 7.95},
+	{name: 'Country Peas Sandwich', price: 7.95}
+];
+---
+
+<SplitColumnLayout reverseOnMobile={true}>
+   <PriceList heading='Breakfast Sandwiches (all day)' priceList={breakfastSandwiches} />
+   <div>
+      <!-- TO DO - images -->
+   </div>
+</SplitColumnLayout>
