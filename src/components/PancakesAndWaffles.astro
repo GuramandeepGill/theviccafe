@@ -1,0 +1,16 @@
+---
+import SplitColumnLayout from "../layouts/SplitColumnLayout.astro";
+import PriceList from "./PriceList.astro";
+
+const pancakesAndWaffles = [
+	{name: 'Buttermilk Pancake', description: '3 pieces of pancake come with syrup, butter and fresh seasonal berries', price: 8.95},
+	{name: 'Waffle', description: '2 pieces of waffle come with waffle syrup, butter and fresh seasonal berries', price: 11.95}
+];
+---
+
+<SplitColumnLayout>
+   <div>
+      <!-- TO DO - images -->
+   </div>
+   <PriceList heading='Pancakes and Waffles' priceList={pancakesAndWaffles} />
+</SplitColumnLayout>

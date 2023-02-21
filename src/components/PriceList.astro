@@ -5,9 +5,9 @@ const {heading, priceList} = Astro.props;
 <section class="grid gap-10">
    <h3 class="heading__three text-white">{heading}</h3>
    <ul>
-      {priceList.map(({name, price}) =>
+      {priceList.map(({name, description, price}) =>
          <li class="pricelist__item">
-            <span>{name}</span>
+            <span>{name}{description && <span class="block">{description}</span>}</span>
             <span class="text-right">${price}</span>
          </li>
       )}

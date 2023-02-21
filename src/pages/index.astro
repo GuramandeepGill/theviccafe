@@ -7,17 +7,7 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 
 import BreakfastSandwiches from '../components/BreakfastSandwiches.astro';
-
-const breakfastSandwiches = [
-	{name: 'Scrambled Egg & Bacon Breakfast Burrito', price: 8.95},
-	{name: 'Scrambled Egg Bagel', price: 7.95},
-	{name: 'Hearty Beef & Egg Bagel', price: 8.95},
-	{name: 'Creamy Egg Onion Sandwich', price: 7.95},
-	{name: 'Eggvocado Bean Burrito', price: 7.95},
-	{name: 'Yogurt & Berries', price: 6.95},
-	{name: 'Breakfast Beef Pocket', price: 7.95},
-	{name: 'Country Peas Sandwich', price: 7.95}
-];
+import PancakesAndWaffles from '../components/PancakesAndWaffles.astro';
 
 const allDaySandwiches = [
 	{name: 'Cranberry-Walnut Chicken Sandwich', price: 11.95},
@@ -26,11 +16,6 @@ const allDaySandwiches = [
 	{name: 'Turkey Bacon Avocado Sandwich', price: 11.95},
 	{name: 'Egg Salad Sandwich', price: 9.95},
 	{name: 'Turkey Bacon Pocket', price: 9.95}
-];
-
-const pancakesAndWaffles = [
-	{name: 'Buttermilk Pancake', description: '3 pieces of pancake come with syrup, butter and fresh seasonal berries', price: 8.95},
-	{name: 'Waffle', description: '2 pieces of waffle come with waffle syrup, butter and fresh seasonal berries', price: 11.95}
 ];
 
 const salads = [
@@ -164,40 +149,7 @@ const icedBeverages = [
 					<h2 class="text-[64px] text-center text-white md:text-[80px] lg:text-8xl">Our Menu</h2>
 
 					<BreakfastSandwiches />
-
-					<div class="grid gap-12 pt-12 md:grid-cols-2 md:gap-16 md:pt-[60px] lg:gap-20 lg:pt-[72px]">
-						<section class="order-2">
-							<h3 class="text-[40px] text-white md:text-[44px] lg:text-5xl">Breakfast Sandwiches (all day)</h3>
-							<ul class="[&_li]:grid [&_li]:grid-cols-[4fr_1fr] [&_li]:py-5 [&_li:not(:last-child)]:border-b [&_li]:border-dotted [&_li]:border-brown [&_span:last-child]:text-right">
-								{breakfastSandwiches.map(({name, price}) =>
-									<li>
-										<span>{name}</span>
-										<span>${price}</span>
-									</li>
-								)}
-							</ul>
-						</section>
-						<div class="md:order-2">
-							<!-- TO DO - images -->
-						</div>
-					</div>
-
-					<div class="grid gap-12 pt-24 md:grid-cols-2 md:gap-16 md:pt-[120px] lg:gap-20 lg:pt-36">
-						<div>
-							<!-- TO DO - images -->
-						</div>
-						<section>
-							<h3 class="text-[40px] text-white md:text-[44px] lg:text-5xl">Pancakes and Waffles</h3>
-							<ul class="[&_li]:grid [&_li]:grid-cols-[4fr_1fr] [&_li]:py-5 [&_li:not(:last-child)]:border-b [&_li]:border-dotted [&_li]:border-brown [&_span:last-child]:text-right">
-								{pancakesAndWaffles.map(({name, description, price}) =>
-									<li>
-										<span>{name}<br>{description}</span>
-										<span>${price}</span>
-									</li>
-								)}
-							</ul>
-						</section>
-					</div>
+					<PancakesAndWaffles />
 
 					<div class="grid gap-12 pt-24 md:grid-cols-2 md:gap-16 md:pt-[120px] lg:gap-20 lg:pt-36">
 						<section class="order-2">
