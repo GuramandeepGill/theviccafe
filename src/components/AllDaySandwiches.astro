@@ -1,0 +1,23 @@
+---
+import SplitColumnLayout from "../layouts/SplitColumnLayout.astro";
+import PriceList from "./PriceList.astro";
+
+const allDaySandwiches = [
+	{name: 'Cranberry-Walnut Chicken Sandwich', price: 11.95},
+	{name: 'Chickpea Sandwich', price: 9.95},
+	{name: 'Horseradish Cold Roast Beef Sandwich', price: 11.95},
+	{name: 'Turkey Bacon Avocado Sandwich', price: 11.95},
+	{name: 'Egg Salad Sandwich', price: 9.95},
+	{name: 'Turkey Bacon Pocket', price: 9.95}
+];
+---
+
+<SplitColumnLayout reverseOnMobile={true}>
+   <div>
+      <PriceList heading='All-Day Sandwiches (all day)' priceList={allDaySandwiches} />
+      <slot />
+   </div>
+   <div>
+      <!-- TO DO - images -->
+   </div>
+</SplitColumnLayout>
